@@ -1,0 +1,955 @@
+body {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 8px 15px rgba(0, 0, 0, 0.3); /* Faint shadow at the top */
+    background-color: #e6e6e6ff;
+}
+
+header .logo {
+    background-color: #fff; /* White background for the logo section */
+    /*background: linear-gradient(to right, #ecececff, #fff);*/
+    padding: .5vw;
+    text-align: center;
+}
+
+header .logo-text {
+    font-size: 1.7vw;
+}
+
+header .logo img {
+    height: auto;
+    width: 8vw;
+}
+
+header nav {
+    background-color: #e6e6e6ff;
+    padding: .5vw;
+    text-align: center;
+    box-shadow: 0 10px 0px rgba(0, 0, 0, 0.7); /* Larger shadow at the bottom */
+}
+
+nav a {
+    font-size: 1.3vw;
+    margin: 1vw;
+    text-decoration: none;
+    color: #393939ff;
+    /*font-weight: bold;*/
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #a2a2a2ff;
+}
+
+section.fullscreen-photo {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 14vw; /* Adjust this value to control the distance from the top */
+}
+
+section.fullscreen-photo img {
+    width: 110%;
+    height: auto;
+}
+
+
+ section.title {
+     width: 100%;
+     margin-top: 4vw;
+     text-align: center;
+ }
+
+ section.title p {
+     font-size: 3.5vw;
+ }
+
+ section.title p:nth-child(2) {
+     margin-top: -4vw;
+     font-size: 1.2vw;
+ }
+/* Add more styling for the content section as needed */
+
+
+
+
+ section.content {
+     margin-top: 8vw;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 1vh 1vw;
+ }
+ .text-box h{
+   font-size: 2vw;
+   font-weight: bold;
+ }
+
+ .text-box {
+     width: 40%;
+     text-align: center;
+ }
+
+ .text-box p {
+     font-size: 1vw;
+     padding-right: 5vw;
+     padding-left: 5vw;
+     line-height: 2;
+ }
+
+ .buttons {
+     display: flex;
+     justify-content: center;
+     margin-top: 1vh;
+ }
+
+ .buttons button {
+     font-size: 1vw; /* Adjust font size using vw */
+     margin-right: 1vw;
+     margin-left: 1vw;
+     width: 10vw; /* Adjust the width as needed using vw */
+     height: 3.4vw;
+     padding: .5vw;
+ }
+
+.buttons a{
+  text-decoration: none;
+}
+
+
+ .image-box {
+     width: 55%; /* Adjust the width as needed */
+ }
+
+ .image-box img {
+     width: 100%;
+     height: auto;
+ }
+ button {
+     margin-top: 1vh;
+     font-family: inherit;
+     font-size: 2vw; /* Change to vw for font size */
+     font-weight: 700;
+     background: linear-gradient(to bottom, #4dc7d9 0%,#66a6ff 100%);
+     color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border: none;
+     border-radius: 10px; /* Adjust the border-radius as needed */
+     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+     transition: all 0.3s;
+ }
+
+ button:hover {
+   transform: translateY(-3px);
+   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+ }
+
+ button:active {
+   transform: scale(0.95);
+   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+ }
+
+ button span {
+   display: block;
+   margin-left: 0.4em;
+   transition: all 0.3s;
+ }
+
+ button svg {
+   width: 1vw;
+   height: 1w;
+   fill: white;
+   transition: all 0.3s;
+ }
+
+ button .svg-wrapper {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 1.5vw; /* Adjust the width as needed */
+     height: 1.5vw; /* Adjust the height as needed */
+     border-radius: 50%;
+     background-color: rgba(255, 255, 255, 0.2);
+     margin-right: 0.5em;
+     transition: all 0.3s;
+ }
+
+ button:hover .svg-wrapper {
+   background-color: rgba(255, 255, 255, 0.5);
+ }
+
+ button:hover svg {
+   transform: rotate(45deg);
+ }
+
+
+
+
+ /*facebook*/
+ .button2 {
+   display: flex;
+   background-color: #039be5;
+   background-image: linear-gradient(to top right, #0163E0,#18ACFE);
+   color: #ffffff;
+   padding: 0.5vh 1.4vw;
+   font-size: 2vw;
+   line-height: 1.25vw;
+   font-weight: 700;
+   text-align: center;
+   vertical-align: middle;
+   align-items: center;
+   border-radius: 10px;
+   gap: 0.75vw;
+   border: none;
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+   cursor: pointer;
+   transition: .6s ease;
+ }
+
+
+ .button2 svg {
+   height: 3vh;
+ }
+
+ .button2:hover {
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+ }
+
+
+
+
+
+
+ /*eBoard*/
+ section.eBoard {
+     margin-top: 15vh;
+     text-align: center;
+ }
+
+ section.eBoard h2 {
+     font-size: 3vw;
+     font-weight: bold;
+     text-decoration: underline;
+ }
+
+ .person {
+     display: flex;
+     justify-content: center; /* Center the items horizontally */
+     align-items: center;
+     margin-top: 4vh;
+ }
+
+ .person .description,
+ .person .person-image {
+     width: 30%;
+     text-align: center; /* Center the text within the box */
+     margin-right: 2vw;
+     margin-left: 2vw;
+ }
+
+ .person .description h3 {
+     font-size: 2.4vw;
+     font-weight: bold;
+ }
+
+ .person .description p.job-role {
+     font-size: 2vw;
+     font-weight: bold;
+     line-height: 2;
+ }
+
+ .person .description p {
+     font-size: 1.3vw;
+     text-align: center; /* Center the text within the box */
+     line-height: 2;
+ }
+
+ .person .person-image img {
+     width: 100%;
+     height: auto;
+ }
+
+.person .person-image {
+  width: 30%;
+  text-align: center;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  opacity: 1;   
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out; /* Add opacity transition */
+}
+
+.person .person-image.slide-in {
+  transform: translateX(0);
+  opacity: 1; /* Ensure opacity is set to 1 when slide-in class is applied */
+  transition-delay: 0.2s;
+}
+
+
+
+
+
+
+/*Members Section*/
+.members h1{
+  text-align: center; 
+  margin-bottom: 3vh;
+  margin-top: 15vh;
+  font-size: 3vw;
+  text-decoration: underline;
+
+}
+
+.accordion h2 {
+    font-weight: 500;
+    font-size: 2vw;
+    line-height: 1.5;
+    border-bottom: 1.5px solid #fff;
+    white-space: nowrap;
+    margin-bottom: -1.2vh;
+}
+
+.accordion p {
+    font-weight: 200;
+    font-size: 1.2vw;
+    line-height: 1vh;
+}
+
+ul.accordion {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1vw;
+    height: 55vh;
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    transition: 0.35s;
+}
+
+.accordion li {
+    position: relative;
+    overflow: hidden;
+    width: 5vw; /* Set the default width */
+    border-radius: 30px;
+    opacity: 0.75;
+    cursor: pointer;
+    transition: width 0.35s, margin-right 0.35s, opacity 0.35s;
+    margin-right: 0vw; /* Initial gap between items */
+}
+
+.accordion li:hover {
+    width: 30vw; /* Increase width on hover */
+    margin-right: 0; /* Reduce gap on hover */
+    opacity: 1;
+}
+
+.accordion li img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.accordion li .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    color: #fff;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center; /* Center the text horizontally */
+    transition: 0.35s;
+}
+
+.accordion li:hover .content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.members .accordion .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    color: #fff;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center; /* Center the text horizontally */
+    transition: 0.35s;
+}
+
+.members .accordion .content span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center the text horizontally */
+    justify-content: flex-end;
+    margin-bottom: 5vh;
+}
+
+.members .accordion .content h2,
+.members .accordion .content p {
+    align-self: center; /* Center the text horizontally */
+    margin-bottom: 0; /* Ensure no extra margin at the bottom */
+}
+
+
+
+
+
+/*Events Section*/
+.events {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -5vh;
+}
+
+.events h2 {
+    line-height: 1.5;
+    white-space: nowrap;
+    margin-bottom: -1.2vh;
+    text-align: center; 
+    margin-bottom: -3vh;
+    margin-top: 15vh;
+    font-size: 3vw;
+    text-decoration: underline;
+    
+}
+
+.event-container {
+    border: 5px solid #000000;
+    border-radius: 10px;
+    padding: 2vw;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3vh;
+    background: url('pictures/superMario.png') center/cover fixed no-repeat;
+}
+
+.event-image {
+    width: 30%; /* Adjust as needed */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+.event-textbox {
+    padding: 2vw;
+    position: relative;
+    width: 30%;
+    text-align: center;
+    
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    color: #efc013; /* Main text color */
+    text-shadow: 2px 1px 0px #ab2918;
+}
+
+.event-textbox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0, 0.85), rgba(0,0,0, 0.85));
+    /* Adjust the gradient and opacity values as needed */
+    border-radius: 20px;
+    z-index: -1; /* Place the overlay behind the text content */
+}
+
+.event-textbox h3 {
+    font-size: 2.4vw;
+    font-weight: 800;
+    margin-bottom: 1vh;
+    text-shadow: 3px 1px 0px #ab2918;
+}
+
+.event-textbox h4 {
+    font-size: 2.2vw;
+    font-weight: 600;
+    margin-bottom: 1vh;
+    text-decoration: underline;
+}
+
+.event-textbox p {
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.event-textbox button {
+    margin: 0 auto; /* Center items horizontally */
+}
+
+button img{
+  width: 2vw;
+  height:auto;
+}
+
+.event-textbox a{
+  text-decoration: none;
+  padding: 0;
+  margin:0;
+}
+
+.events button {
+  background: transparent;
+  position: relative;
+  padding: .5vh 1vw;
+  display: flex;
+  align-items: center;
+  font-size: 1.4vw;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #e6a800;
+  border-radius: 20px;
+  outline: none;
+  overflow: hidden;
+  color: #ffffff;
+  width: 14vw;
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+  fill: #e6a800;
+}
+
+.events button span {
+  margin: .6vw;
+}
+
+.events button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 20px;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.events button:hover {
+  fill: #ab2918;
+  color: #ab2918;
+  border: 1px solid #ab2918;
+}
+
+.events button:hover::before {
+  box-shadow: inset 0 0 0 10em #e6a800;
+}
+
+
+
+
+
+
+
+
+
+
+
+.music {
+    text-align: center;
+    padding: 2vh 5vw;
+}
+
+.music h2 {
+    line-height: 1.5;
+    white-space: nowrap;
+    margin-bottom: -2vh;
+    text-align: center; 
+    margin-bottom: 3vh;
+    margin-top: 8vh;
+    font-size: 3vw;
+    text-decoration: underline;
+}
+
+.music h3 {
+    line-height: 1.5;
+    white-space: nowrap;
+    margin-bottom: -1.2vh;
+    text-align: center; 
+    font-size: 2.2vw;
+    font-weight: 500;
+    
+}
+
+.music p {
+    line-height: 1.5;
+    white-space: nowrap;
+    text-align: center; 
+    font-size: 1.8vw;
+    font-weight: 300;
+}
+
+
+
+
+
+.music-content {
+    display: flex;
+    justify-content: center;
+}
+
+.music-section {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.image-container {
+    overflow: hidden;
+    width: 35%;
+    max-width: 35%; /* Ensure a maximum width of 35% */
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+.original-image,
+.overlay-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add a smooth transition for transform and opacity */
+}
+
+.original-image{
+  height: 100%;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Add a smooth transition for opacity */
+    transform: translateY(-2vw);
+    
+}
+
+.image-container:hover .original-image {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    
+}
+
+.image-container:hover .overlay-image {
+    opacity: 0.7; /* Adjust the opacity of the overlay image on hover */
+}
+
+
+
+
+
+
+
+
+
+
+.socials {
+    text-align: center;
+    padding: 2vh 5vw;
+}
+
+.socials h2 {
+    line-height: 1.5;
+    white-space: nowrap;
+    margin-bottom: -1.2vh;
+    text-align: center;
+    font-size: 3vw;
+    text-decoration: underline;
+}
+
+
+
+.button-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  gap: 8vw;
+  margin-top: 3vh;
+}
+
+.button-section a {
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  max-width: 30%;
+  font-size: 2.6vw;
+  border-radius: 10px;
+}
+
+.button-section button {
+  background: transparent;
+  border: none;
+  padding: 2vh 1vw;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row; /* Change to row to display image and text side by side */
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0vh;
+}
+
+.button-section img {
+  width: 3vw;
+  height: auto;
+  margin-right: 0.5vw; /* Adjust margin-right to separate image and text */
+}
+
+.button-section span {
+  font-size: 2.6vw;
+}
+
+
+.instagram {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #FFDC80);
+}
+
+.youtube {
+    background: linear-gradient(45deg, #ff0f0f, #aa1d1d);
+}
+
+.tiktok {
+  background: linear-gradient(45deg, #405DE6, #E65D40);
+  /*background: linear-gradient(45deg, #EE1D52, #531623);*/
+}
+
+.facebook {
+    background: linear-gradient(45deg, #3b5998, #192f6a);
+}
+
+.spotify {
+    background: linear-gradient(45deg, #00e04f, #038c33);
+}
+
+.linkedIn {
+    background: linear-gradient(45deg, #0077b5, #00405d);
+}
+.appleMusic {
+    background: linear-gradient(45deg, #FF2C55, #FF005A, #FF2071, #C5005D);
+}
+
+
+
+
+
+
+
+
+
+/*repertoire*/
+/*eBoard*/
+ section.repertoire {
+    margin-top: 18vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+ }
+
+ section.repertoire h2 {
+     font-size: 5vw;
+     font-weight: bold;
+     text-decoration: underline;
+ }
+
+ .song {
+     display: flex;
+     justify-content: center; /* Center the items horizontally */
+     align-items: center;
+     margin-top: 4vh;
+ }
+
+ .song .description,
+ .song .song-image {
+     width: 40%;
+     text-align: left; /* Center the text within the box */
+     margin-right: 4vw;
+     margin-left: 4vw;
+ }
+
+ .song .description h3 {
+     font-size: 2.8vw;
+     font-weight: bold;
+ }
+
+ .song .description p.job-role {
+     font-size: 2.9vw;
+     font-weight: bold;
+     line-height: 2;
+ }
+
+ .song .description p {
+     font-size: 2.2vw;
+     text-align: left; /* Center the text within the box */
+     line-height: 2;
+ }
+
+ .song .song-image img {
+     width: 100%;
+     height: auto;
+ }
+
+.song .song-image {
+  width: 40%;
+  text-align: center;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  opacity: 1;   
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out; /* Add opacity transition */
+}
+
+
+
+
+
+
+
+
+
+/*alumni*/
+/*repertoire*/
+/*eBoard*/
+ section.alumniPage {
+   margin-top: 18vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+  
+ }
+
+ section.alumniPage h2 {
+     font-size: 5vw;
+     font-weight: bold;
+     text-decoration: underline;
+ }
+
+ .alumni {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 10vw;
+     width: 80%;
+     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); /* Adjust the values as needed */
+     background-color: #f2f2f2;
+ }
+
+ .alumni .description,
+ .alumni .alumni-image {
+     width: 50%;
+     text-align: center; /* Center the text within the box */
+     height: 100%;
+ }
+
+.alumni-image{
+  background-color: #ffffff;
+}
+
+ .alumni .description h3 {
+     font-size: 2.2vw;
+     font-weight: bold;
+ }
+
+ .alumni .description p.job-role {
+     font-size: 2.9vw;
+     font-weight: bold;
+     line-height: 2;
+ }
+
+ .alumni .description p {
+     font-size: 1.8vw;
+     text-align: center; /* Center the text within the box */
+     line-height: 2;
+ }
+
+ .alumni .alumni-image img {
+     width: 100%;
+     height: auto;
+ }
+
+.alumni .alumni-image {
+  width: 50%;
+  text-align: center;
+  opacity: 1;   
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out; /* Add opacity transition */
+}
+
+.alumni .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.alumni .description h3,
+.alumni .description p.job-role,
+.alumni .description p {
+    margin: 0; /* Remove default margin to ensure accurate vertical centering */
+}
